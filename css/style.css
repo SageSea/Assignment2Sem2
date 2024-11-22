@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Default font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #ffe0e0, #fff5f5);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #D5B369;
+    color: black;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 2px;
+    padding: 20px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Hero Section */
+#hero {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Covered By Your Grace', cursive;
+    font-style: italic;
+    color: #F20114;
+}
+
+/* Background Video */
+#hero .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scale the video to fill the hero section */
+    z-index: -1; /* Place video behind content */
+}
+
+/* Hero Content */
+#hero h1 {
+    position: relative;
+    z-index: 1; /* Ensure text is above the video */
+    font-size: 7rem;
+    margin: 0;
+}
+
+#hero p {
+    position: relative;
+    z-index: 1; /* Ensure text is above the video */
+    font-size: 5rem;
+    margin-top: 10px;
+}
+
+/* About Section */
+#about {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+#about h2 {
+    font-size: 5rem;
+    color: #f20114;
+}
+
+#about img{
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px; /* Add subtle rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+ }
+
+/* Gallery Section */
+#gallery {
+    padding: 40px 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #f20114;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.gallery-item{
+    text-align: center;
+    flex: 1;
+    box-sizing: border-box;
+    max-width: calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+.gallery-item h3 {
+    font-size: 1.5rem;
+    color: #D5B369;
+    margin: 10px 0;
+    font-family: 'Covered By Your Grace', cursive;
+}
+
+/* Styling for Descriptions */
+.gallery-item p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Footer Section */
+footer {
+    padding: 40px 20px;
+    background-color: #f20114;
+    color: white;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 2rem;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer form input, footer form textarea, footer form button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer form button {
+    background-color: white;
+    color: #ff5c5c;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+footer form button:hover {
+    background-color: #ffe0e0;
+}
+
+.footer-info {
+    margin-top: 20px;
+}
+
+.footer-logo {
+    height: 40px;
+}
