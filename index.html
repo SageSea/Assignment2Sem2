@@ -1,0 +1,81 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Twix">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+<title>TWIX</title>
+</head>
+<body>
+<!--Header-->
+<header>
+    <img src="./img/logo.webp" alt="logo" class="logo">
+    <nav>
+        <!--Navigation links-->
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="hero">
+    <h1>TWIX</h1>
+    <p>Candy with a surprise inside!</p>
+    <video class="background" autoplay loop muted playsinline>
+        <source src="video/background.mp4" type="video/mp4">
+    </video>
+</section>
+<!--About-->
+<section id="about">
+    <h2>About Twix</h2>
+    <p>Twix is a caramel shortbread biscuit bar consisting of a biscuit applied with other confectionery toppings and coatings (most frequently caramel and milk chocolate).</p>
+    <img src="img/aboutimg.webp" alt="about image">
+</section>
+<!--Gallery-->
+<section id="gallery">
+    <h2>Our products</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="img/candy1.jpeg" alt="Original twix">
+            <h3>Twix Bar</h3>
+            <p>TWIX is an awesome combination of crunchy cookie, delicious caramel and creamy chocolate. Perfect for sharing.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="img/candy2.jpeg" alt="Cookies and creme">
+            <h3>Twix Cookies & Creme</h3>
+            <p>Filled and topped with crunchy chocolate cookie pieces, TWIX Cookies & Creme Ice Cream Bars are individually wrapped for sharing, and a delicious way to make sweet memories.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="img/candy3.jpg" alt="Creamy Peanut Butter">
+            <h3>Twix Creamy Peanut Butter</h3>
+            <p>Two crunchy cookie bars are coated with sweet peanut butter and then drenched in rich milk chocolate to form this incredible candy treat!</p>
+        </div>
+    </div>
+</section>
+<!--Footer-->
+<footer id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+    <div class="footer-info">
+        <img src="img/logo.webp" alt="Twix Logo" class="footer-logo">
+        <p>&copy; 2024 Twix. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
